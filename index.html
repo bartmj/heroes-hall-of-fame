@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Brakujący link do font Lato -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <!-- Brakujący link do js -->
+    <script type="text/javascript" src="heroes-hall-of-fame.js"></script>
+
+    <style>
+        :root {
+            --bg-color: rgb(30, 148, 40);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            font-family: 'Lato', sans-serif;
+        }
+
+        .hero {
+            margin: 1rem 0;
+            border: 1px solid black;
+            padding: .25rem;
+        }
+
+        button {
+            margin-bottom: .5rem;
+        }
+
+        #remove-btn {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hall of fame</h1>
+    <h3>Hero count: <span id="hero-count"></span></h3>
+    <div class="hero-container">
+
+    </div>
+    <input type="text" id="hero" placeholder="hero name..." />
+    <button onclick="addHero()">Add a hero</button>
+
+</body>
+
+</html>
